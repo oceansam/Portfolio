@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+
+/*
+dark color 292841
+light color EDF6F9
+*/
+body {
+  padding: 0px;
+  margin: 0px;
+  background-color: #edf6f9;
+  background-size: 100%;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/*
+Profile picture
+*/
+#avatar {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+
+  border: 1px solid white;
+  border-radius: 50%;
+}
+/*
+Name and pfp
+*/
+#front {
+  border: 1px solid pink;
+}
+
+#title {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 36%;
+
+  color: #292841;
+  border: 1px solid red;
+  font-family: "Poppins", sans-serif;
+  font-size: 50px;
+}
+
+#ResumeButton {
+  border: 5px solid red;
+  margin-left: 48%;
+  padding-top: 4%;
+  margin-top: 5%;
+}
+/*
+#languages{
+ display: flex-start;
+ border: 1px solid blue;
+ padding-left: 38%;
+}
+
+#icons{
+  color: pink;
+  border: 1px solid red;
+  font-size: 90px;
+  
+  
+}
+
+*/
