@@ -7,7 +7,7 @@ light color EDF6F9
 body {
   padding: 0px;
   margin: 0px;
-  background-color: #edf6f9;
+  background-color: #1F2232;
   background-size: 100%;
 }
 html {
@@ -39,18 +39,82 @@ Name and pfp
   margin-right: auto;
   padding-left: 36%;
 
-  color: #292841;
+  color: #EDF6F9;
   border: 1px solid red;
   font-family: "Poppins", sans-serif;
   font-size: 50px;
 }
 
-#ResumeButton {
-  border: 5px solid red;
-  margin-left: 48%;
-  padding-top: 4%;
-  margin-top: 5%;
+#iconList-3{
+  border: 1px solid red;
+  padding-left: 40%;
 }
+
+ul#three-icon{
+  list-style: none;
+}
+
+li{
+  display: inline-block;
+}
+
+.projects-container{
+  padding: 3em;
+  width: 94%;
+  height: 350px;
+}
+
+.button-container{
+  
+  height: 15%;
+}
+
+.button-container button{
+  display: inline-block;
+  width: 14%;
+  height :100%;
+  border: none;
+  background-color:#BC9EC1 ;
+  border-radius: 20px 20px 0 0;
+  
+}
+.button-container button:hover{
+
+
+  background-color: #E3BAC6;
+}
+/*
+need border-box for padding -top
+*/
+
+
+button:focus{
+  transition: .50s ease;
+  background-color: #E3BAC6;
+  outline: none;
+  width: 16%;
+}
+section:after{
+  opacity: 50%;
+}
+.tab-box{
+
+
+  display: none;
+  height :85%;
+  background-color: #E3BAC6;
+  color : white;
+  text-align: center;
+  padding-top: 105px;
+  box-sizing: border-box;
+
+}
+
+.active.tab-box{
+  transition: 1s ease;
+  display:block;
+}
+
 /*
 #languages{
  display: flex-start;
