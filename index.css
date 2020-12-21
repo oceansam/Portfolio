@@ -1,21 +1,67 @@
-body {
-  background-color: darkblue;
-  max-width: 100%;
-  overflow-x: hidden;
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+* {
+  padding: 0px;
+  margin: 0px;
+  /* background-color: #393f7a; */
+  font-family: 'VT323', monospace;
+  color: white !important;
 }
 
-.Top-Back {
+
+.Hero-Image{
+  
+  background-color: #97e7ff;
+  border: 1px solid red;
+  /* May have to change */
+  height: 70%;
+
+}
+
+.Hero-Body{
   position: relative;
-  animation: cloud 20s linear infinite;
+  text-align: center;
+  padding-top: 15%;
+  border: 1px solid red;
 }
 
-@keyframes cloud {
-  0% {
-    transform: translateX(100%);
-  }
+.Hero-Text{
+  font-size: 120px;
+  border: 1px solid green;
+}
+.Hero-Button{
+  border: 1px solid blue;
+}
 
-  100% {
-    transform: translateX(-800px);
-    opacity: 0;
-  }
+
+div.btn-group {
+  margin: 0 auto; 
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.btn-group{
+  background-color: #65a0b3;
+  width: 180px;
+  border-radius : 30px;
+}
+
+/* Project CSS */
+.Project-Containers{
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.Project-Box{
+  margin-top: 100px;
+  background-color: #312f2f;
+  position: relative;
+  min-width: 310px;
+  min-height: 410px;
+  margin-left: 10px;
+  border-radius: 10px;
+  opacity: 0.8;
+  transition: 0.4s ease;
 }

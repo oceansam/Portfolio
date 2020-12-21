@@ -1,30 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="index.css" />
+<head>
+  <title>Sam's Cave</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel = "stylesheet" href = "index.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
 
-    <link
-      href="https://fonts.googleapis.com/css?family=Poppins&display=swap"
-      rel="stylesheet"
-    />
-    <title>Sam - A Portfolio</title>
-  </head>
 
-  <body>
+  <div id = "app">
 
-    <div id = "Page">
-      <div style = "height:100%">
-        <div class = "Top-Back">
-          <img src= "/Images/Cloud2.png">
+    <!-- Hero Image -->
+    <div class = "Hero-Image container-fluid text-white">
+
+      <!-- Container inside hero image -->
+      <div class = "Hero-Container container">
+
+        <!-- Hero Body -->
+        <div class = "Hero-Body">
+
+          <!-- Hero Text -->
+          <div class = "Hero-Text">
+            Hi, I'm Sam!
+
+          </div>
+
+          <!-- Hero Button Container -->
+          <div class = "Hero-Button btn-toolbar">
+            
+            <div class="btn-group mr-2" role="group" aria-label="First group" role="toolbar" aria-label="Toolbar with button groups">
+              <a class="btn" href="https://www.github.com/oceansam" role="button" style = "font-size: 30px">Github</a>
+            </div>
+
+            <div class="btn-group mr-2" role="group" aria-label="Second group">
+              <a class="btn" href="#" role="button" style = "font-size: 30px">Resume</a>
+            </div>
+
+            <div class="btn-group" role="group" aria-label="Third group">
+              <a class="btn" href="#" role="button" style = "font-size: 30px">LinkedIn</a>
+            </div>
+          </div>
+
 
         </div>
+
+
       </div>
+      <!-- SVG Images -->
+      <div>
+
+      </div>
+
+
+
+
+
     </div>
 
-  </body>
+    <div class="character-container">
+      <div class="character-card">
+        <div class="box">
+          <div class="info">
+            <img class="char-image" src="venti-profile.png" />
+            <h1 class="character-name">Venti</h1>
+            <img id="venti-star" src="star.png" />
+            <h1 class="tier">S</h1>
+          </div>
+        </div>
+      </div>
 
-  <script src="script.js"></script>
+    <div class = "Project-Containers">
+      <div class = "Project-Box">
+        <div class = "info">
+          <h1 class = "Project-Name">Get Me Home!</h1>
+          <p class = "Project-Descr">  
+            A winning hackathon project 
+          </p>
+        </div>
+    </div>
+  </div>
+  <div class = "Project-Containers">
+    <div class = "Project-Box">
+      <div class = "info">
+        <h1 class = "Project-Name">Get Me Home!</h1>
+        <p class = "Project-Descr">  
+          A winning hackathon project 
+        </p>
+      </div>
+  </div>
+</div>
+
+
+
+
+</body>
 </html>
