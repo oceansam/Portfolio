@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 * {
-  padding: 0px;
-  margin: 0px;
   /* background-color: #393f7a; */
   font-family: 'VT323', monospace;
   color: white !important;
@@ -10,10 +8,9 @@
 
 .Hero-Image{
   
-  background-color: #97e7ff;
+  /* background-color: #97e7ff; */
   border: 1px solid red;
-  /* May have to change */
-  height: 70%;
+  background-color: #7b9edb;
 
 }
 
@@ -22,6 +19,7 @@
   text-align: center;
   padding-top: 15%;
   border: 1px solid red;
+  z-index: 3;
 }
 
 .Hero-Text{
@@ -30,9 +28,13 @@
 }
 .Hero-Button{
   border: 1px solid blue;
+  padding-bottom: 10%;
+  padding-top: 10%;
 }
 
-
+.Hero-Container{
+  z-index: 2;
+}
 div.btn-group {
   margin: 0 auto; 
   text-align: center;
@@ -40,28 +42,96 @@ div.btn-group {
 }
 
 .btn-group{
-  background-color: #65a0b3;
+  background-color: #67ab8d;
   width: 180px;
   border-radius : 30px;
+  transition: 0.8s ease;
+}
+
+.btn-group:hover{
+  background-color: #387080;
+
 }
 
 /* Project CSS */
+
+.Projects-Tab{
+  padding-top: 10%;
+  padding-bottom: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  border: 1px solid black;
+}
 .Project-Containers{
-  background-color: black;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }
 
+
 .Project-Box{
-  margin-top: 100px;
   background-color: #312f2f;
   position: relative;
   min-width: 310px;
   min-height: 410px;
   margin-left: 10px;
   border-radius: 10px;
-  opacity: 0.8;
   transition: 0.4s ease;
+}
+
+/* SVG Images */
+
+.HeroImageBack{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+img{
+  width: 640px;
+  height: 384px;
+}
+
+.Cloud{
+  position: absolute;
+  z-index: 1;
+}
+
+#Cloud1{
+  margin-left: -250px;
+  animation: Cloud1 50s linear forwards;
+}
+
+#Cloud2{
+  margin-left: 700px;
+  margin-top: 300px;
+  animation-name: Cloud;
+  animation-duration: 10s;
+}
+
+#Cloud3{
+  margin-left: 1250px;
+  animation-name: Cloud;
+  animation-duration: 25s;
+}
+#Cloud4{
+  margin-left: 100px;
+  margin-top: 100px;
+  animation-name: Cloud;
+  animation-duration: 10s;
+}
+
+/* Cloud Animations */
+
+@keyframes Cloud1{
+
+100%{
+
+transform: translateX(500px);
+
+}
+
 }
