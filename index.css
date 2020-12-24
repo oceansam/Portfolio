@@ -3,37 +3,36 @@
   /* background-color: #393f7a; */
   font-family: 'VT323', monospace;
   color: white !important;
+  padding: 0;
+  margin: 0;
 }
+
 
 
 .Hero-Image{
   
   /* background-color: #97e7ff; */
-  border: 1px solid red;
   background-color: #7b9edb;
-
 }
 
 .Hero-Body{
   position: relative;
   text-align: center;
   padding-top: 15%;
-  border: 1px solid red;
   z-index: 3;
 }
 
 .Hero-Text{
   font-size: 120px;
-  border: 1px solid green;
 }
 .Hero-Button{
-  border: 1px solid blue;
   padding-bottom: 10%;
   padding-top: 10%;
 }
 
 .Hero-Container{
   z-index: 2;
+  height: 100%;
 }
 div.btn-group {
   margin: 0 auto; 
@@ -62,7 +61,7 @@ div.btn-group {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  border: 1px solid black;
+
 }
 .Project-Containers{
   display: flex;
@@ -88,6 +87,10 @@ div.btn-group {
   position: absolute;
   top: 0;
   left: 0;
+  height: 100%;
+  width: 100%;
+  overflow  : hidden;
+
 }
 
 img{
@@ -98,40 +101,52 @@ img{
 .Cloud{
   position: absolute;
   z-index: 1;
+  left: 50%;
 }
 
 #Cloud1{
-  margin-left: -250px;
-  animation: Cloud1 50s linear forwards;
+  margin-left: 500px;
+  animation: Cloud1 140s linear infinite;
 }
 
 #Cloud2{
-  margin-left: 700px;
+  margin-left: -600px;
   margin-top: 300px;
-  animation-name: Cloud;
-  animation-duration: 10s;
+  animation: Cloud1 80s linear infinite;
 }
 
 #Cloud3{
-  margin-left: 1250px;
-  animation-name: Cloud;
-  animation-duration: 25s;
+  margin-left: -300px;
+  animation: Cloud1 100s linear infinite;
 }
 #Cloud4{
-  margin-left: 100px;
+  margin-left: -1280px;
   margin-top: 100px;
-  animation-name: Cloud;
-  animation-duration: 10s;
+  animation: Cloud1 120s linear infinite;
 }
 
+#StaticCloud{
+  margin-left: -1000px;
+  margin-top: -50px
+}
+#StaticCloud1{
+  margin-left: 350px;
+  margin-top: 243px;
+}
 /* Cloud Animations */
 
 @keyframes Cloud1{
+0%{
+  opacity: 0;
+}
+
+15%{
+    opacity:1;
+}
 
 100%{
-
-transform: translateX(500px);
-
+transform: translateX(100%);
+opacity: 0;
 }
 
 }
