@@ -2,7 +2,6 @@
 * {
   /* background-color: #393f7a; */
   font-family: 'VT323', monospace;
-  color: white !important;
   padding: 0;
   margin: 0;
 }
@@ -26,6 +25,9 @@
   font-size: 120px;
 }
 .Hero-Button{
+  display: flex;
+  align-items: center;
+
   padding-bottom: 10%;
   padding-top: 10%;
 }
@@ -44,7 +46,7 @@ div.btn-group {
   background-color: #67ab8d;
   width: 180px;
   border-radius : 30px;
-  transition: 0.8s ease;
+  transition: 0.5s ease;
 }
 
 .btn-group:hover{
@@ -80,6 +82,48 @@ div.btn-group {
   border-radius: 10px;
   transition: 0.4s ease;
 }
+
+/* About me */
+
+#about{
+
+
+  background-color: whitesmoke;
+  /* border: 2px solid red; */
+  color: black;
+  height: 100%;
+}
+
+#AboutContainer{
+  padding-top: 5%;
+  /* border: 5px solid #333; */
+  overflow: auto;
+  padding-left: 30%;
+}
+
+#imagediv{
+  float: left;
+}
+#descr{
+  display: inline-block;
+  margin-left: 30px;
+  /* border: 2px solid green; */
+  width: 850px;
+}
+#descr>h2 {
+  font-size: 70px;
+}
+#descr>p{
+  font-size: 30px;
+}
+.popup{
+  /* border: 3px solid purple; */
+  display: block;
+  float: left;
+  width: 320px;
+  height: auto;
+}
+
 
 /* SVG Images */
 
