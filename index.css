@@ -20,9 +20,22 @@
   padding-top: 15%;
   z-index: 3;
 }
-
-.Hero-Text{
+/* Typewrite effect for landing title */
+.Hero-Text> h1{
+  overflow: hidden;
+  white-space: nowrap;
   font-size: 120px;
+  margin: 0 auto;
+  animation: typing 3s steps(40, end)
+}
+
+@keyframes typing{
+  from{
+    width: 0%;
+  }
+  to{
+    width: 100%;
+  }
 }
 .Hero-Button{
   display: flex;
@@ -83,38 +96,69 @@ div.btn-group {
   transition: 0.4s ease;
 }
 
+/* Wave */
+.wave{
+  width: 100%;
+}
+
+#wave1{
+  width: 100%;
+  height: auto;
+}
 /* About me */
 
-#about{
+.infoBox{
 
 
-  background-color: whitesmoke;
+  /* background-color: whitesmoke; */
+  margin-bottom: 10%;
   /* border: 2px solid red; */
   color: black;
   height: 100%;
 }
 
-#AboutContainer{
+.frontContainer{
   padding-top: 5%;
   /* border: 5px solid #333; */
-  overflow: auto;
+  overflow: hidden;
   padding-left: 30%;
 }
 
-#imagediv{
+.frontContainer-Alternative{
+  padding-top: 5%;
+  /* border: 5px solid #333; */
+  overflow: hidden;
+  padding-right: 30%;
+}
+
+.imageDisplay{
   float: left;
 }
-#descr{
+
+.imageDisplay-Alternative{
+  float: right;
+}
+
+.descr{
   display: inline-block;
-  margin-left: 30px;
+  margin-left: 50px;
   /* border: 2px solid green; */
-  width: 850px;
+  width: 550px;
 }
-#descr>h2 {
-  font-size: 70px;
+
+#descr-Alternative{
+  display: inline-block;
+  margin-right: 50px;
+  /* border: 2px solid green; */
+  width: 550px;
+  margin-left: 30%;
 }
-#descr>p{
-  font-size: 30px;
+
+.descr>h2 {
+  font-size: 350%;
+}
+.descr>p{
+  font-size: 170%;
 }
 .popup{
   /* border: 3px solid purple; */
@@ -125,7 +169,7 @@ div.btn-group {
 }
 
 
-/* SVG Images */
+/* SVG Images as background */
 
 .HeroImageBack{
   position: absolute;
