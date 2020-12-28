@@ -67,35 +67,75 @@ div.btn-group {
 
 }
 
-/* Project CSS */
+.header{
+  text-align: center;
+  font-size: 100px;
+  margin-bottom: 20px;
+}
 
-.Projects-Tab{
-  padding-top: 10%;
-  padding-bottom: 10%;
-  display: flex;
+/* Project CSS ---------------------*/
+
+
+.grid-container {
+  
+  display: grid;
+  grid-template-columns: 350px 350px;
+  grid-template-rows: 500px 500px;
+  grid-column-gap: 30px;
   justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+}
+.grid-item {
+  background-color: #387080;
+
+  padding: 10px;
+  border-radius: 15px;
 
 }
-.Project-Containers{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+
+.Project-Name{
+  font-size: 55px;
+  color: white;
 }
+.Project-Descr{
+  font-size: 25px;
+}
+.Project-Box{
+  background-color: #67ab8d;
+  border-radius: 15px;
+  height: 100%;
+  width: 100%;
+}
+.info{
+  padding: 10px;
+  color: 433455;
+}
+/* .Projects-Tab{
+  padding-top: 5%;
+  padding-bottom: 5%;
+  display: grid;
+
+}
+
 
 
 .Project-Box{
-  background-color: #312f2f;
-  position: relative;
-  min-width: 310px;
-  min-height: 410px;
-  margin-left: 10px;
+  background-color: #387080;
   border-radius: 10px;
-  transition: 0.4s ease;
 }
 
+.Box{
+  height: 100%;
+  background-color: #67ab8d;
+  margin: 10px;
+  padding: 10px;
+}
+.info{
+  height: 100%;
+  color: #ccc5ba;
+  white-space: pre-wrap;
+} */
+
+/* -------------------------------------- */
 /* Wave */
 .wave{
   width: 100%;
@@ -181,11 +221,13 @@ div.btn-group {
 
 }
 
-img{
+.HeroImageBack>img{
   width: 640px;
   height: 384px;
 }
-
+a{
+  text-decoration: none;
+}
 .Cloud{
   position: absolute;
   z-index: 1;
