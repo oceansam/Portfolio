@@ -79,7 +79,7 @@ div.btn-group {
 .grid-container {
   
   display: grid;
-  grid-template-columns: 350px 350px;
+  grid-template-columns: 350px 350px 350px;
   grid-template-rows: 500px 500px;
   grid-column-gap: 30px;
   justify-content: center;
@@ -107,8 +107,10 @@ div.btn-group {
 }
 .info{
   padding: 10px;
-  color: 433455;
+  height: 85%;
 }
+
+
 /* .Projects-Tab{
   padding-top: 5%;
   padding-bottom: 5%;
