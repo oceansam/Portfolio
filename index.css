@@ -73,10 +73,17 @@ div.btn-group {
   margin-bottom: 20px;
 }
 
+
+#skills-header{
+  color: white;
+  background-color: #7b9edb;
+  margin: 0;
+}
+
 /* Project CSS ---------------------*/
 
 
-.grid-container {
+/* .grid-container {
   
   display: grid;
   grid-template-columns: 350px 350px 350px;
@@ -108,34 +115,59 @@ div.btn-group {
 .info{
   padding: 10px;
   height: 85%;
+} */
+
+.Project-Containers{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
 }
-
-
-/* .Projects-Tab{
-  padding-top: 5%;
-  padding-bottom: 5%;
-  display: grid;
-
-}
-
 
 
 .Project-Box{
-  background-color: #387080;
+
+  margin-bottom: 100px;
+  background-color: #312f2f;
+  position: relative;
+  min-width: 400px;
+  min-height: 600px;
+  margin-left: 10px;
   border-radius: 10px;
+
 }
 
+/* .Project-Image{
+  float: right;
+  width: 400px;
+  height: 250px;
+} */
 .Box{
-  height: 100%;
-  background-color: #67ab8d;
-  margin: 10px;
-  padding: 10px;
+
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  border: 2px solid #3c3e42;
+  border-radius: 10px;
+  background-color: #3c3e42;
+
 }
 .info{
-  height: 100%;
-  color: #ccc5ba;
-  white-space: pre-wrap;
-} */
+  background-color: #3c3e42;
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  height: 80%;
+  border: 5px solid red;
+  font-size: 25px;
+} 
+
+.Project-Name{
+  font-size: 50px;
+}
 
 /* -------------------------------------- */
 /* Wave */
@@ -211,6 +243,35 @@ div.btn-group {
 }
 
 
+/* Skills */
+
+.Skills-Container{
+
+  background-color: #7b9edb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+
+
+
+.Skill-Box>img{
+
+  width: 200px;
+  height: auto;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+.overlay{
+
+  display: none;
+  opacity: 0;
+}
+
+
 /* SVG Images as background */
 
 .HeroImageBack{
@@ -227,9 +288,7 @@ div.btn-group {
   width: 640px;
   height: 384px;
 }
-a{
-  text-decoration: none;
-}
+
 .Cloud{
   position: absolute;
   z-index: 1;
