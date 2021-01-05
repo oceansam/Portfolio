@@ -76,8 +76,16 @@ div.btn-group {
 
 #skills-header{
   color: white;
-  background-color: #7b9edb;
-  margin: 0;
+  border-right: 3px solid white;
+  padding: 5px;
+  
+
+}
+
+#skills-div{
+  position: relative;
+  width: max-content;
+    
 }
 
 /* Project CSS ---------------------*/
@@ -246,7 +254,7 @@ div.btn-group {
 /* Skills */
 
 .Skills-Container{
-
+  border: 2px solid red;
   background-color: #7b9edb;
   display: flex;
   justify-content: center;
@@ -254,6 +262,13 @@ div.btn-group {
   flex-wrap: wrap;
 }
 
+.Skill-Box{
+  border: 2px solid green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
 
 
 
@@ -265,10 +280,27 @@ div.btn-group {
   margin-bottom: 10px;
 }
 
-.overlay{
+.skill-Image{
+  transition: 2s ease;
+  transition-duration: infinite;
+  
 
-  display: none;
-  opacity: 0;
+}
+.skill-Image:hover{
+
+  animation-name: "skillHover";
+  animation: skillHover 1.5s linear infinite;
+}
+
+@keyframes skillHover{
+  
+  50%{
+    transform: translateY(-15px);
+  }
+  100%{
+    transform: translateY(0px);
+  }
+
 }
 
 

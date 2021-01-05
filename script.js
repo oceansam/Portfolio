@@ -1,17 +1,23 @@
-function skillDisplay(Image){
-    
-    console.log(Image.alt);
-    overlay = document.getElementById(Image.alt);
+header = document.getElementById("skills-header")
 
-    overlay.style.opacity = 1;
-    overlay.style.display = "block";
-    overlay.innerHTML = Image.alt;
+setInterval(function(){
+
+    var temp = setTimeout(function(){
+        header.style.borderRight = "0px";
+    },500);
+
+    header.style.borderRight = "5px solid white";
+
+    
+},800);
+
+function skillDisplay(Image){
+
+    header.innerHTML = Image.alt;
+    Image.style.transform = "rotateY(350deg)";
+
 }
 
 function stopDisplay(Image){
-    overlay = document.getElementById(Image.alt)
-
-    overlay.style.opacity = 0;
-    overlay.style.display = "none";
-    
+    header.innerHTML = "Skills";
 }
