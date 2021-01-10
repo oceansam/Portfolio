@@ -169,7 +169,7 @@ div.btn-group {
   font-family: "Montserrat", sans-serif;
   color: #ffffff;
   height: 80%;
-  border: 5px solid red;
+  /* border: 5px solid red; */
   font-size: 25px;
 } 
 
@@ -211,28 +211,40 @@ div.btn-group {
   /* border: 5px solid #333; */
   overflow: hidden;
   padding-right: 30%;
+
 }
 
 .imageDisplay{
   float: left;
+
 }
 
 .imageDisplay-Alternative{
   float: right;
+
 }
 
 .descr{
+  
   display: inline-block;
-  margin-left: 50px;
   /* border: 2px solid green; */
   width: 550px;
+  /* margin-left: 50px;
+  margin-right: 30%; */
+}
+#AXOBS{
+  margin-left: 30px;
+  width: 600px;
 }
 
+#descr-Non{
+  margin-left: 50px;
+  margin-right: 30%;
+  
+}
 #descr-Alternative{
-  display: inline-block;
   margin-right: 50px;
   /* border: 2px solid green; */
-  width: 550px;
   margin-left: 30%;
 }
 
@@ -244,17 +256,45 @@ div.btn-group {
 }
 .popup{
   /* border: 3px solid purple; */
-  display: block;
+  display: flex;
   float: left;
   width: 320px;
   height: auto;
 }
 
+/* Media Queries */
+@media only screen and (max-width: 760px) {
+ 
+  .descr{
+    width: 80%;
+  }
+  .descr>h2{
+    font-size: 290%;
+  }
+  .descr>p{
+    font-size: 120%;
+  }
+  .popup{
+    width: 180px;
+  }
+  #normPop{
+    margin-left: 80px;
+  }
+  #descr-Alternative{
+    margin-left: 25%;
+  }
+
+
+  .frontContainer{
+    padding-left: 0%;
+  } 
+
+
+}
 
 /* Skills */
 
 .Skills-Container{
-  border: 2px solid red;
   background-color: #7b9edb;
   display: flex;
   justify-content: center;
@@ -263,7 +303,6 @@ div.btn-group {
 }
 
 .Skill-Box{
-  border: 2px solid green;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -373,3 +412,16 @@ opacity: 0;
 }
 
 }
+
+/* Contact Section */
+.contact-descr{
+  text-align: center;
+}
+.contact-descr>p{
+  font-size: 170%;
+}
+.contact-descr>a{
+  font-size: 120px;
+}
+
+
