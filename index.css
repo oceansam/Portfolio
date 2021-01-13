@@ -26,17 +26,10 @@
   white-space: nowrap;
   font-size: 120px;
   margin: 0 auto;
-  animation: typing 3s steps(40, end)
+  color: white;
 }
 
-@keyframes typing{
-  from{
-    width: 0%;
-  }
-  to{
-    width: 100%;
-  }
-}
+
 .Hero-Button{
   display: flex;
   align-items: center;
@@ -55,16 +48,17 @@ div.btn-group {
   font-size: 1.2em;
 }
 
+
+
 .btn-group{
-  background-color: #67ab8d;
+  background-color: #312f2f;
   width: 180px;
   border-radius : 30px;
   transition: 0.5s ease;
 }
 
 .btn-group:hover{
-  background-color: #387080;
-
+  background-color: #4d5055;
 }
 
 .header{
@@ -72,7 +66,9 @@ div.btn-group {
   font-size: 100px;
   margin-bottom: 20px;
 }
-
+div.btn-group >a{
+  color: white !important;
+}
 
 #skills-header{
   color: white;
@@ -88,42 +84,6 @@ div.btn-group {
     
 }
 
-/* Project CSS ---------------------*/
-
-
-/* .grid-container {
-  
-  display: grid;
-  grid-template-columns: 350px 350px 350px;
-  grid-template-rows: 500px 500px;
-  grid-column-gap: 30px;
-  justify-content: center;
-}
-.grid-item {
-  background-color: #387080;
-
-  padding: 10px;
-  border-radius: 15px;
-
-}
-
-.Project-Name{
-  font-size: 55px;
-  color: white;
-}
-.Project-Descr{
-  font-size: 25px;
-}
-.Project-Box{
-  background-color: #67ab8d;
-  border-radius: 15px;
-  height: 100%;
-  width: 100%;
-}
-.info{
-  padding: 10px;
-  height: 85%;
-} */
 
 .Project-Containers{
 
@@ -147,11 +107,7 @@ div.btn-group {
 
 }
 
-/* .Project-Image{
-  float: right;
-  width: 400px;
-  height: 250px;
-} */
+
 .Box{
 
   position: absolute;
@@ -192,60 +148,42 @@ div.btn-group {
 .infoBox{
 
 
-  /* background-color: whitesmoke; */
-  margin-bottom: 10%;
-  /* border: 2px solid red; */
+  margin-bottom: 5%;
   color: black;
   height: 100%;
+
+  /* border: 2px solid red;  */
+
 }
 
+
+
+
+/* ALT */
 .frontContainer{
-  padding-top: 5%;
-  /* border: 5px solid #333; */
+  display: flex;
+  padding-top: 3%;
   overflow: hidden;
-  padding-left: 30%;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  text-align: justify;
+}
+#frontContainer-alt{
+  flex-direction: row-reverse;
 }
 
-.frontContainer-Alternative{
-  padding-top: 5%;
-  /* border: 5px solid #333; */
-  overflow: hidden;
-  padding-right: 30%;
-
-}
-
-.imageDisplay{
-  float: left;
-
-}
-
-.imageDisplay-Alternative{
-  float: right;
-
-}
 
 .descr{
   
-  display: inline-block;
-  /* border: 2px solid green; */
-  width: 550px;
-  /* margin-left: 50px;
-  margin-right: 30%; */
+  width: 580px;
 }
-#AXOBS{
-  margin-left: 30px;
-  width: 600px;
-}
-
 #descr-Non{
-  margin-left: 50px;
-  margin-right: 30%;
-  
+  padding-left: 20px;
 }
-#descr-Alternative{
-  margin-right: 50px;
-  /* border: 2px solid green; */
-  margin-left: 30%;
+#descr-alt{
+  padding-right: 30px;
 }
 
 .descr>h2 {
@@ -262,35 +200,7 @@ div.btn-group {
   height: auto;
 }
 
-/* Media Queries */
-@media only screen and (max-width: 760px) {
- 
-  .descr{
-    width: 80%;
-  }
-  .descr>h2{
-    font-size: 290%;
-  }
-  .descr>p{
-    font-size: 120%;
-  }
-  .popup{
-    width: 180px;
-  }
-  #normPop{
-    margin-left: 80px;
-  }
-  #descr-Alternative{
-    margin-left: 25%;
-  }
 
-
-  .frontContainer{
-    padding-left: 0%;
-  } 
-
-
-}
 
 /* Skills */
 
@@ -300,6 +210,8 @@ div.btn-group {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
 }
 
 .Skill-Box{
@@ -357,7 +269,7 @@ div.btn-group {
 
 .HeroImageBack>img{
   width: 640px;
-  height: 384px;
+  height: auto;
 }
 
 .Cloud{
@@ -367,33 +279,33 @@ div.btn-group {
 }
 
 #Cloud1{
-  margin-left: 500px;
+  margin-left: 24%;
   animation: Cloud1 140s linear infinite;
 }
 
 #Cloud2{
-  margin-left: -600px;
-  margin-top: 300px;
+  margin-left: -30%;
+  margin-top: 15%;
   animation: Cloud1 80s linear infinite;
 }
 
 #Cloud3{
-  margin-left: -300px;
+  margin-left: -15%;
   animation: Cloud1 100s linear infinite;
 }
 #Cloud4{
-  margin-left: -1280px;
-  margin-top: 100px;
+  margin-left: -65%;
+  margin-top: 10%;
   animation: Cloud1 120s linear infinite;
 }
 
 #StaticCloud{
-  margin-left: -1000px;
-  margin-top: -50px
+  margin-left: -55%;
+  margin-top: -3%;
 }
 #StaticCloud1{
-  margin-left: 350px;
-  margin-top: 243px;
+  margin-left: 20%;
+  margin-top: 16%;
 }
 /* Cloud Animations */
 
@@ -424,4 +336,21 @@ opacity: 0;
   font-size: 120px;
 }
 
+/* Media Queries */
 
+@media only screen and (max-width: 869px) {
+  .frontContainer{
+  text-align: center;
+
+  }
+}
+
+@media only screen and (max-width: 1189px){
+  #Cloud2{
+    display: none;
+  }
+  #StaticCloud, #StaticCloud1{
+    display: none;
+  }
+ 
+}
