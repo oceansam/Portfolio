@@ -78,8 +78,15 @@ div.btn-group >a{
 
     
 }
-
-
+.type{
+  color: #7b9edb;
+}
+#underDevelopment{
+  color: red;
+}
+#sideProject{
+  color: gold;
+}
 .Project-Containers{
 
   display: flex;
