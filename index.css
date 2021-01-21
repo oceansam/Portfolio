@@ -203,13 +203,11 @@ div.btn-group >a{
   background-color: #7b9edb;
   display: block;
   text-align: center;
-  border: 2px solid red;
 }
 
 #skill-div{
   display: flex;
   justify-content: center;
-  border: 3px solid blue;
   width: 100%;
 }
 
